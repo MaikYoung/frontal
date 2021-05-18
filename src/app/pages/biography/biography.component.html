@@ -1,5 +1,34 @@
 <navbar></navbar>
 
-biografia
+<div class="container">
+    <div class="row intro-bio">
+        <div class="col-4 col-xs-12">
+            IMÄGEN E_D
+        </div>
+        <div class="col-8 col-xs-12">
+            TEXTO BIO
+        </div>
+    </div>
+    <div class="row sections-bio">
+        <div class="col-6 col-xs-12">
+            <p (click)="setShowValue('bio')">Biografía</p>
+            <p (click)="setShowValue('sema')">Cursos y seminarios A</p>
+            <p (click)="setShowValue('semb')">Cursos y seminarios B</p>
+        </div>
+        <div class="col-6 col-xs-12">
+            <p (click)="setShowValue('comp')">Trayectoría como competidora</p>
+            <p (click)="setShowValue('juez')">Trayectoría como jueza</p>
+            <p (click)="setShowValue('recon')">Cargos y reconociminetos</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12" *ngIf="show == 'bio'">LA BIO</div>
+        <div class="col-12" *ngIf="show == 'sema'">SEMA</div>
+        <div class="col-12" *ngIf="show == 'semb'">SEMB</div>
+        <div class="col-12" *ngIf="show == 'comp'">COMP</div>
+        <div class="col-12" *ngIf="show == 'juez'">JUEZ</div>
+        <div class="col-12" *ngIf="show == 'recon'">RECON</div>
+    </div>
+</div>
 
 <footer></footer>
