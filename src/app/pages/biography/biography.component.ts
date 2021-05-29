@@ -12,14 +12,11 @@ export class BiographyComponent implements OnInit {
 
   ngOnInit() {
     this.show = 'bio'
-    console.log("entrando", this.show);
     
   }
 
   public setShowValue(val:string){
     this.show = val
-    console.log(this.show);
-    
   }
 
 }

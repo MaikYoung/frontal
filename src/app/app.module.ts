@@ -11,6 +11,7 @@ import { AcademyComponent } from './pages/academy/academy.component';
 import { CursosComponent } from './pages/cursos/cursos.component';
 import { ServicioComponent } from './pages/servicio/servicio.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { IgaComponent } from './pages/iga/iga.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
     AcademyComponent,
     CursosComponent,
     ServicioComponent,
-    ContactoComponent
+    ContactoComponent,
+    IgaComponent
   ],
   imports: [
     BrowserModule,
