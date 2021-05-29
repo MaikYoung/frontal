@@ -6,6 +6,7 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { BiographyComponent } from './pages/biography/biography.component';
 import { CursosComponent } from './pages/cursos/cursos.component';
 import { ServicioComponent } from './pages/servicio/servicio.component';
+import { IgaComponent } from './pages/iga/iga.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'services',
     component: ServicioComponent
+  },
+  {
+    path: 'iga',
+    component: IgaComponent
   }
 ];
 
