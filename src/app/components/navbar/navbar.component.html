@@ -9,12 +9,21 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="/biography">Emilia Díaz</a>
-        <a class="nav-link" href="/academy">Academia</a>
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" (click)="showDropMenu()" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Academia
+          </a>
+          <div [class.show]="dropOpen == true" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="/academy">Academia</a>
+            <a class="dropdown-item" href="/iga">IGA</a>
+          </div>
+        </div>
         <a class="nav-link" href="/courses">Cursos</a>
         <a class="nav-link" href="/services">Servicios</a>
         <a class="nav-link" href="/contact">Contacto</a>
       </div>
     </div>
   </div>
-  <p>en academia es un select sobre dos paginas la de academia ya hecha e iga</p>
 </nav>
+
+

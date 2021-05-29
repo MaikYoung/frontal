@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-
+  dropOpen:boolean=false
   constructor() { }
 
   ngOnInit() {
   }
 
+  showDropMenu(open:boolean){
+    return this.dropOpen = (!this.dropOpen) ? true : false
+  }
 }
