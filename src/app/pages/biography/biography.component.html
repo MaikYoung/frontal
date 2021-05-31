@@ -3,30 +3,29 @@
 <div class="container">
     <div class="row intro-bio">
         <div class="col-4 col-xs-12">
-            IMÄGEN E_D
+            <img src="" alt="imagen-ed" srcset="">
         </div>
         <div class="col-8 col-xs-12">
-            TEXTO BIO
+            <h5>Los Inicios…</h5>
+            <p>Desde pequeña resido en Santa Coloma de Gramanet (Barcelona) y me formo en el ámbito deportivo, dedicándome al deporte y a mejorar la salud de las personas, trabajando para el Ayuntamiento de la localidad, impartiendo clase polideportivas en sus instalaciones municipales, aunque mi deporte predilecto es el atletismo, que me ha ayudado enormemente a adquirir valores personales como constancia, sacrificio, trabajo, compañerismo, ética o dedicación, los cuales han sido vitales para su desarrollo personal y profesional.</p>
+
         </div>
     </div>
     <div class="row sections-bio">
         <div class="col-6 col-xs-12">
-            <p (click)="setShowValue('bio')">Biografía</p>
-            <p (click)="setShowValue('sema')">Cursos y seminarios Impartidos</p>
-            <p (click)="setShowValue('semb')">Cursos y seminarios Realizados</p>
+            <p class="clickable" (click)="setShowValue('bio')">Biografía</p>
+            <p class="clickable" (click)="setShowValue('sema')">Cursos y seminarios Impartidos</p>
+            <p class="clickable" (click)="setShowValue('semb')">Cursos y seminarios Realizados</p>
         </div>
         <div class="col-6 col-xs-12">
-            <p (click)="setShowValue('comp')">Trayectoría como competidora</p>
-            <p (click)="setShowValue('juez')">Trayectoría como jueza</p>
-            <p (click)="setShowValue('recon')">Cargos y reconociminetos</p>
+            <p class="clickable" (click)="setShowValue('comp')">Trayectoría como competidora</p>
+            <p class="clickable" (click)="setShowValue('juez')">Trayectoría como jueza</p>
+            <p class="clickable" (click)="setShowValue('recon')">Cargos y reconociminetos</p>
         </div>
     </div>
     <div class="row">
         <div class="col-12" *ngIf="show == 'bio'">
             
-                <h5>Los Inicios…</h5>
-                <p>Desde pequeña resido en Santa Coloma de Gramanet (Barcelona) y me formo en el ámbito deportivo, dedicándome al deporte y a mejorar la salud de las personas, trabajando para el Ayuntamiento de la localidad, impartiendo clase polideportivas en sus instalaciones municipales, aunque mi deporte predilecto es el atletismo, que me ha ayudado enormemente a adquirir valores personales como constancia, sacrificio, trabajo, compañerismo, ética o dedicación, los cuales han sido vitales para su desarrollo personal y profesional.</p>
-
 
                 <h5>1986-1995</h5>
                 <p>Me traslado a Girona en 1986 donde adquiero con mi marido Julio Salamanca unos ejemplares de Husky Siberiano con el fin de entrenar para correr con Tiro de Trineo, objetivo “La Pirena” </p>
