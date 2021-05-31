@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
-      <img src="" alt="" width="30" height="24" class="d-inline-block align-text-top">
+      <img src="/assets/images/ed_logo.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -10,7 +10,7 @@
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="/biography">Emilia Díaz</a>
         <div class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" (click)="showDropMenu()" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle clickable" (click)="showDropMenu()" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Academia
           </a>
           <div [class.show]="dropOpen == true" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
