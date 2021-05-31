@@ -12,6 +12,14 @@ import { CursosComponent } from './pages/cursos/cursos.component';
 import { ServicioComponent } from './pages/servicio/servicio.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { IgaComponent } from './pages/iga/iga.component';
+import { CondicionesUsoComponent } from './pages/condiciones-uso/condiciones-uso.component';
+import { PoliticaCookiesComponent } from './pages/politica-cookies/politica-cookies.component';
+import { PoliticaPrivacidadComponent } from './pages/politica-privacidad/politica-privacidad.component';
+import { AvisoLegalComponent } from './pages/aviso-legal/aviso-legal.component';
+import { VentaReembolsoComponent } from './pages/venta-reembolso/venta-reembolso.component';
+import { TecnicoSuperiorComponent } from './pages/tecnico-superior/tecnico-superior.component';
+import { TecnicoAvanzadoComponent } from './pages/tecnico-avanzado/tecnico-avanzado.component';
+import { EspecializacionTecnicaComponent } from './pages/especializacion-tecnica/especializacion-tecnica.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +32,15 @@ import { IgaComponent } from './pages/iga/iga.component';
     CursosComponent,
     ServicioComponent,
     ContactoComponent,
-    IgaComponent
+    IgaComponent,
+    CondicionesUsoComponent,
+    PoliticaCookiesComponent,
+    PoliticaPrivacidadComponent,
+    AvisoLegalComponent,
+    VentaReembolsoComponent,
+    TecnicoSuperiorComponent,
+    TecnicoAvanzadoComponent,
+    EspecializacionTecnicaComponent
   ],
   imports: [
     BrowserModule,
