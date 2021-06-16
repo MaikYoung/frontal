@@ -1,3 +1,32 @@
 .card-footer{
     background-color: white;
 }
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #ccccff;
+    border-radius: .25rem;
+}
+
+.btn-primary {
+    color: white;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(255,153,255,1) 0%, rgba(255,204,255,1) 100%);
+    border-color: white;
+    width: 40%;
+    margin: auto;
+}
+
+.center-button {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-check:focus, .btn:focus {
+    box-shadow: none !important;
+}

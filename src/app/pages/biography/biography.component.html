@@ -5,24 +5,25 @@
         <div class="col-4 col-xs-12">
             <img src="" alt="imagen-ed" srcset="">
         </div>
-        <div class="col-8 col-xs-12">
+        <div class="col-8 col-xs-12" data-aos="fade-down" data-aos-duration="100">
             <p>Para ser un gran profesional no es necesario conseguir un campeonato del mundo, pero si es importante la humildad, la capacidad de aprendizaje, el actualizarse constantemente y disfrutar del arte de la peluquería canina. Conseguir combinar todas y cada una de las nuevas técnicas para entregar la pasión y calidad que tus clientes y sus mascotas merecen.</p>
         </div>
     </div>
     <div class="row sections-bio">
-        <div class="col-6 col-xs-12">
+        <div class="col-6 col-xs-12"  data-aos="fade-right" data-aos-duration="4000">
             <p class="clickable" (click)="setShowValue('bio')">Biografía</p>
             <p class="clickable" (click)="setShowValue('sema')">Cursos y seminarios Impartidos</p>
             <p class="clickable" (click)="setShowValue('semb')">Cursos y seminarios Realizados</p>
         </div>
-        <div class="col-6 col-xs-12">
+        <div class="col-6 col-xs-12"  data-aos="fade-left" data-aos-duration="4000">
             <p class="clickable" (click)="setShowValue('comp')">Trayectoría como competidora</p>
             <p class="clickable" (click)="setShowValue('juez')">Trayectoría como jueza</p>
             <p class="clickable" (click)="setShowValue('recon')">Cargos y reconociminetos</p>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12" *ngIf="show == 'bio'">
+    <div class="hr"></div>
+    <div class="row" style="margin-bottom: 30px;">
+        <div class="col-12" *ngIf="show == 'bio'" data-aos="fade-up" data-aos-duration="4000">
             <h5>Los Inicios…</h5>
             <p>Desde pequeña resido en Santa Coloma de Gramanet (Barcelona) y me formo en el ámbito deportivo, dedicándome al deporte y a mejorar la salud de las personas, trabajando para el Ayuntamiento de la localidad, impartiendo clase polideportivas en sus instalaciones municipales, aunque mi deporte predilecto es el atletismo, que me ha ayudado enormemente a adquirir valores personales como constancia, sacrificio, trabajo, compañerismo, ética o dedicación, los cuales han sido vitales para su desarrollo personal y profesional.</p>
 
@@ -68,7 +69,7 @@
                 <p>Se me nombra Groomer Referente Internacional de la prestigiosa marca de cosmética animal Hydra Profesional, pero es a partir del 2019, cuando empiezo a trabajar en el nuevo proyecto, como Directora Técnica en España de dicha marca.</p>
             
         </div>
-        <div class="col-12" *ngIf="show == 'sema'">
+        <div class="col-12" *ngIf="show == 'sema'"   data-aos="fade-up" data-aos-duration="4000">
             <p><b>1999</b> - Madrid (España). Seminario demostración de peluqueria rápida : Kerry Blue Terrier. </p>
 
             <p><b>2000</b> - Silleda (España). Seminario demostración de Bichón Frisé y Kerry Blue Terrier. </p>
@@ -164,7 +165,7 @@
             <p><b>2020</b> - Sao Paulo (Brasil). Megagrooming Show. Demostración con Schnauzer Miniatura.</p>
 
         </div>
-        <div class="col-12" *ngIf="show == 'semb'">
+        <div class="col-12" *ngIf="show == 'semb'"   data-aos="fade-up" data-aos-duration="4000">
             <p><b>1998</b> - Barcelona (España). Jornadas multiponencias Artero</p>
             <p><b>1998</b> - Girona (España). Vincent Pastor. El pelo duro. Estándar y arreglo Fox Terrier y West Highland White Terrier</p>
 
@@ -235,7 +236,7 @@
             <p><b>2020</b> – Sao Paulo (Brasil). Gabriel Feitosa. Técnicas de arreglo Bichón Frisé</p>
             <p><b>2020</b> – On Line Hydra Internacional. Xisca Martorell. Creatividad estilo asíatico pelo rizado.</p>
         </div>
-        <div class="col-12" *ngIf="show == 'comp'">
+        <div class="col-12" *ngIf="show == 'comp'"   data-aos="fade-up" data-aos-duration="4000">
             <p><b>1997</b> Barcelona (España). Sizoo Campeonato Internacional Medalla de Plata Categoría Show Class.</p>
 
             <p><b>1998</b> Montpellier (Francia) Ciceaux d´ Or Internacional Medalla de Plata Categoría Tijeras </p>
@@ -285,7 +286,7 @@
             <p><b>2018</b> Roma (Italia). Milangroom. Campeonato de Jueces EGA.  Medalla de ORO</p>
             <p><b>2018</b> Barcelona (España). Artero Grooming Slam. Campeonato por Equipos. Medalla de ORO con el equipo Hydra</p>
         </div>
-        <div class="col-12" *ngIf="show == 'juez'">
+        <div class="col-12" *ngIf="show == 'juez'"   data-aos="fade-up" data-aos-duration="4000">
             <h5>1998</h5>
             <p>Marbella (España). Campeonato Nacional / Internacional – AEEC </p>
 
@@ -413,7 +414,7 @@
             <p>Valladolid (España). Espagroom Campeonato Nacional</p>
             <p>On Line.  Romeo Grooming Show</p>
         </div>
-        <div class="col-12" *ngIf="show == 'recon'">
+        <div class="col-12" *ngIf="show == 'recon'"   data-aos="fade-up" data-aos-duration="4000">
             <p>Directora de Emilia Díaz Canine Grooming Academy desde 1997.</p>
             <p>Presidenta de la Asociación Española de Estilistas Caninos.</p>
             <p>Organizadora y jueza del Campeonato Internacional de España en todas sus ediciones.</p>

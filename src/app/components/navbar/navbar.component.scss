@@ -5,3 +5,23 @@
 .clickable {
     cursor: pointer;
 }
+
+.full-width {
+    width: 100% !important;
+}
+
+.lateral-paddings {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.bg-light {
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(153,153,255,1) 0%, rgba(204,204,255,1) 100%);
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(153,153,255,1);
+}

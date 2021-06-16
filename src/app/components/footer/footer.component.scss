@@ -1,6 +1,8 @@
 .background-black {
     background-color: black;
     padding: 5%;
+    padding-bottom: 1px;
+    padding-top: 20px;
 }
 
 a {
@@ -9,4 +11,10 @@ a {
 
 p {
     color: white;
+}
+.padding-icons {
+    color: pink;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 30px !important;
 }
