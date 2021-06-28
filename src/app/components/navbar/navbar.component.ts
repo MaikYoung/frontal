@@ -12,7 +12,7 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
-  showDropMenu(open:boolean){
+  showDropMenu(){
     return this.dropOpen = (!this.dropOpen) ? true : false
   }
 }
