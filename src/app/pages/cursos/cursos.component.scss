@@ -16,7 +16,7 @@
 
 .btn-primary {
     color: white;
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(255,153,255,1) 0%, rgba(255,204,255,1) 100%);
+    background: #C00042;
     border-color: white;
     width: 40%;
     margin: auto;
@@ -29,4 +29,12 @@
 
 .btn-check:focus, .btn:focus {
     box-shadow: none !important;
+}
+
+.back-tech-superior {
+    background-image: url("/assets/images/b335e311-58ed-4b05-b740-3635f61aa3f3.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    color: white;
 }

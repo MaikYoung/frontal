@@ -1,5 +1,5 @@
 .carousel-main {
-    height: 200px;
+    height: 100%;
     width: 100%;
 }
 
@@ -29,6 +29,22 @@
 .motto-section{
     margin-top: 50px;
     margin-bottom: 50px;
+    background-image: url("/assets/images/e-diaz-frontal.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 410px;
+    text-align: center;
+
+    .left {
+        text-align: center;
+        margin-top: 120px;
+        font-size: 21px;
+    }
+
+    .left-down {
+        font-weight: 700;
+        font-size: 30px;
+    }
 }
 
 .card-footer{
