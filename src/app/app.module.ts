@@ -20,6 +20,7 @@ import { VentaReembolsoComponent } from './pages/venta-reembolso/venta-reembolso
 import { TecnicoSuperiorComponent } from './pages/tecnico-superior/tecnico-superior.component';
 import { TecnicoAvanzadoComponent } from './pages/tecnico-avanzado/tecnico-avanzado.component';
 import { EspecializacionTecnicaComponent } from './pages/especializacion-tecnica/especializacion-tecnica.component';
+import { MapContactComponent } from './components/map-contact/map-contact.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { EspecializacionTecnicaComponent } from './pages/especializacion-tecnica
     VentaReembolsoComponent,
     TecnicoSuperiorComponent,
     TecnicoAvanzadoComponent,
-    EspecializacionTecnicaComponent
+    EspecializacionTecnicaComponent,
+    MapContactComponent
   ],
   imports: [
     BrowserModule,
