@@ -1,0 +1,44 @@
+.main-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.intro-text {
+    p {
+       text-align: center; 
+    }
+}
+
+.intro-sub-text {
+    text-align: center;
+    font-style: oblique;
+}
+
+.secondary-title {
+    font-size: 21px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.course-title {
+    font-weight: bold;
+}
+
+.text-chevron {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.program-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+

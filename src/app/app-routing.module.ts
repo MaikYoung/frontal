@@ -26,10 +26,10 @@ const routes: Routes = [
     path: 'academy',
     component: AcademyComponent
   },
-  {
-    path: 'contact',
-    component: ContactoComponent
-  },
+  // {
+  //   path: 'contact',
+  //   component: ContactoComponent
+  // },
   {
     path: 'biography',
     component: BiographyComponent

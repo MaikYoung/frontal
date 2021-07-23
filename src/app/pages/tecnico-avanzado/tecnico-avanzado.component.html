@@ -3,9 +3,221 @@
 <div class="container">
   <div class="row">
     <div class="col-12">
-      
+      <p class="main-title">CURSO TÉCNICO AVANZADO</p>
     </div>
   </div>
+  <div class="row">
+    <div class="col-12 intro-text">
+      <p>Curso avanzado, dirigido para todos aquellos peluqueros caninos profesionales que deseen ampliar y profundizar conocimientos, mejorando y optimizando sus técnicas de arreglo y procesos de trabajo para la peluquería comercial, de exposición o de competición. </p>
+      <p>El objetivo del Curso Técnico Avanzado, es la mejora profesional del alumno, para ello programaremos un temario personalizado enfocando las enseñanzas a tus necesidades, con metodología actualizada y progresiva para dar a conocer y practicar todas las técnicas programadas.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 intro-sub-text">
+      <p>“LA FORMACIÓN QUE NECESITAS PARA PROGRESAR Y DAR UN PASO MÁS ALLÁ EN LA ESTÉTICA ANIMAL”</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <p class="secondary-title">PILARES DEL CURSO</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <p class="course-title">40 horas prácticas </p>
+    </div>
+    <div class="col-12">
+      <p>Adaptamos una gran cantidad de información en 40 horas, para así conseguir que cualquier profesional sea capaz de compatibilizarlo con su actividad laboral. 40 horas prácticas exigentes que sacaran lo mejor de ti.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <p class="course-title">Profundización de la técnica</p>
+    </div>
+    <div class="col-12">
+      <p>Trataremos en profundidad cada una de las técnicas principales para que mejores cada una de ellas. Domina, automatiza y preocúpate de cada mínimo detalle para conseguir un resultado perfecto.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <p class="course-title">Especificidad</p>
+    </div>
+    <div class="col-12">
+      <p>Trataremos los temas más importantes a tener en cuenta en tu centro de una forma detallada y aplicable desde el minuto 1.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <p class="course-title">Experiencia con el cliente</p>
+    </div>
+    <div class="col-12">
+      <p>Al entrar en técnicas más avanzadas, también aprenderás a como transmitirlas a tu cliente potencial, potenciando así su confianza. Te asesoraremos en cada detalle para que consigas aumentar el valor de tu servicio.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <p class="secondary-title">PROGRAMA DEL CURSO</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 course-title">Gestión</div>
+    <div class="col-12">
+      <ul>
+        <li>Atención al cliente y gestión de la información.</li>
+        <li>Organización y gestión de la venta de servicios específicos.</li>
+        <li>Desarrollo y explicación de tareas según servicio.</li>
+        <li>Material. Uso y mantenimiento.</li>
+       </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 course-title">Cuidados higiénicos específicos</div>
+    <div class="col-12">
+      <ul>
+        <li>Cepillado según el pelo a tratar.</li>
+        <li>Especificidad del baño, terapéutico, hidratación o específico.</li>
+        <li>Especificidad en el secado.</li>
+        <li>Prevención de lesiones.</li>
+       </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 course-title">Aplicación de arreglos estéticos según la técnica a trabajar</div>
+    <div class="col-12">
+      <ul>
+        <li>Corte de mantos mediante técnica a tijera.</li>
+        <li>Renovación de mantos mediante técnicas manuales.</li>
+        <li>Expresiones según raza y estilo de corte.</li>
+        <li>Prevención de lesiones.</li>
+       </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <p class="secondary-title">INFORMACIÓN Y PREGUNTAS FRECUENTES</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(1)">
+        <p class="program-title">1. ¿Qué incluye el curso?</p><i *ngIf="id == undefined || id != 1" class="fas fa-chevron-down"></i><i *ngIf="id == 1" class="fas fa-chevron-up"></i>
+      </div>  
+    </div>
+    <div class="col-12" *ngIf="id == 1">
+      <ul>
+        <li>Perros de práctica.</li>
+        <li>Material y equipamiento proporcionado por la academia.</li>
+        <li>Información didáctica.</li>
+        <li>Carpeta de apuntes y bolígrafo.</li>
+        <li>Set de fotografías de los trabajos realizados.</li>
+        <li>Diploma y certificado acreditativo de los estudios realizados.</li>
+        <li>Posibilidad de alojamiento económico, en caso de que lo necesites.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(2)">
+        <p class="program-title">2. ¿Qué ofrecemos?</p><i *ngIf="id == undefined || id != 2" class="fas fa-chevron-down"></i><i *ngIf="id == 2" class="fas fa-chevron-up"></i>
+      </div>  
+    </div>
+    <div class="col-12" *ngIf="id == 2">
+      <p>Prácticas desde el primer día con la metodología actualizada y progresiva para dar a conocer y practicar todas las técnicas necesarias para ejercer la profesión de peluquero y estilista canino.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(3)">
+        <p class="program-title">3. ¿A quién va dirigido el curso?</p><i *ngIf="id == undefined || id != 3" class="fas fa-chevron-down"></i><i *ngIf="id == 3" class="fas fa-chevron-up"></i>
+      </div>  
+    </div>
+    <div class="col-12" *ngIf="id == 3">
+      <p>A profesionales, personas que tengan formación y conocimientos mínimos o que hayan cursado nuestro Curso Técnico Superior. Es un curso más específico y complejo, por lo que será necesario conocimientos previos.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(4)">
+        <p class="program-title">4. ¿Entregáis título?</p><i *ngIf="id == undefined || id != 4" class="fas fa-chevron-down"></i><i *ngIf="id == 4" class="fas fa-chevron-up"></i>
+      </div>  
+    </div>
+    <div class="col-12" *ngIf="id == 4">
+      <p>Toda persona que sea graduada en Emilia Diaz Academy recibirá su título acreditado por nosotros e International Grooming Academy, ambas reconocidas a nivel mundial y capaces de abrirte muchas puertas en la vida laboral.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(5)">
+        <p class="program-title">5. ¿Cómo serán los cursos?</p><i *ngIf="id == undefined || id != 5" class="fas fa-chevron-down"></i><i *ngIf="id == 5" class="fas fa-chevron-up"></i>
+      </div>  
+    </div>
+    <div class="col-12" *ngIf="id == 5">
+      <p>Los cursos están organizados para un aprendizaje personalizado con prácticas desde el primer día de clase.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(6)">
+        <p class="program-title">6. ¿Cuántas horas tiene el curso de técnico avanzado?</p><i *ngIf="id == undefined || id != 6" class="fas fa-chevron-down"></i><i *ngIf="id == 6" class="fas fa-chevron-up"></i>
+      </div>  
+    </div>
+    <div class="col-12" *ngIf="id == 6">
+      <p>El curso profesional consta de un total de 40 horas, dividido en 10 sesiones de 4 horas. </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(7)">
+        <p class="program-title">7. ¿Dónde se imparte el curso?</p><i *ngIf="id == undefined || id != 7" class="fas fa-chevron-down"></i><i *ngIf="id == 7" class="fas fa-chevron-up"></i>
+      </div>  
+    </div>
+    <div class="col-12" *ngIf="id == 7">
+      <p>En nuestro centro base, ubicado en la localidad de Girona, España. A una hora de Barcelona.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(8)">
+        <p class="program-title">8. ¿Disponen de bolsa de trabajo?</p><i *ngIf="id == undefined || id != 8" class="fas fa-chevron-down"></i><i *ngIf="id == 8" class="fas fa-chevron-up"></i>
+      </div>  
+    </div>
+    <div class="col-12" *ngIf="id == 8">
+      <p>Si, por nuestro prestigio como formadores, disponemos de oferta laboral real para nuestros alumnos.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(9)">
+        <p class="program-title">9. ¿Cuándo empezar?</p><i *ngIf="id == undefined || id != 9" class="fas fa-chevron-down"></i><i *ngIf="id == 9" class="fas fa-chevron-up"></i>
+      </div>  
+    </div>
+    <div class="col-12" *ngIf="id == 9">
+      <p>El inicio del curso depende de tu organización y necesidades, tú decides cuando quieres empezar. Los horarios son  totalmente personalizados y flexibles. </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(10)">
+        <p class="program-title">10. ¿Cuál es el precio del curso? ¿Se puede financiar?</p><i *ngIf="id == undefined || id != 10" class="fas fa-chevron-down"></i><i *ngIf="id == 10" class="fas fa-chevron-up"></i>
+      </div>  
+    </div>
+    <div class="col-12" *ngIf="id == 10">
+      <p>El precio es de 1150€ IVA Incluido  y se puede financiar. Ponte en contacto con nosotros para definir la mejor opción para ti.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(11)">
+        <p class="program-title">11. ¿Dónde puedo llamar y reservar?</p><i *ngIf="id == undefined || id != 11" class="fas fa-chevron-down"></i><i *ngIf="id == 11" class="fas fa-chevron-up"></i>
+      </div>  
+    </div>
+    <div class="col-12" *ngIf="id == 11">
+      <p>La compra se puede hacer por nuestra página web directamente y nosotros nos pondremos en contacto contigo para especificar fechas. Para dudas o visitas podéis contactar al 678700247 o al correo electrónico academy@emiliadiaz.com</p>
+    </div>
+  </div>
+
+  
 </div>
 
 <footer></footer>

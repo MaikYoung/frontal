@@ -3,9 +3,199 @@
 <div class="container">
   <div class="row">
     <div class="col-12">
-      
+      <p class="main-title">CURSO ESPECÍFICO DE RAZA O TÉCNICA</p>
     </div>
   </div>
+  <div class="row">
+    <div class="col-12 intro-text">
+      <p>Este curso está dirigido a peluqueros con experiencia previa, que quieran profundizar y perfeccionar el arreglo de una raza determinada o una técnica de trabajo específica para conseguir la perfección en su campo.</p>
+      <p>Este curso es intensivo, con el fin de que sea totalmente adaptable a cualquier profesional. 8 horas de trabajo y aprendizaje que te permitirán que en un solo día domines al 100% el aspecto que creas necesario.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 intro-sub-text">
+      <p>“CON ESTA FORMACIÓN CONSEGUIRÁS CONVERTIRTE EN EL EXPERTO QUE SIEMPRE HAS DESEADO DE TU RAZA FAVORITA”</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <p class="secondary-title">PILARES DEL CURSO</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <p class="course-title">Profundización de la raza</p>
+      <p>Nos adentramos al máximo en la raza seleccionada para que durante las 8 horas de práctica seas capaz de convertirte en un/a experto/a en ella. Los detalles importan, y en este curso serás consciente de ello.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <p class="course-title">Profundización de la técnica</p>
+      <p>También atacaremos en profundidad la técnica que utilizaremos para trabajar en la raza, fijándonos en detalles específicos para mejorar el rendimiento y que aumenten la facilidad del trabajo.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <p class="course-title">Adaptación</p>
+      <p>El curso es 100% personalizado según las necesidades del alumnx, adaptando técnicas y preparando las razas según las que la persona quiera profundizar.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <p class="course-title">Tratamiento Específico</p>
+      <p>Para cada raza es necesario utilizar el tratamiento correspondiente. Veremos en detalle los mejores pasos para seguir en su pre y post baño que ayudarán a conseguir un resultado aún más magnífico.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <p class="secondary-title">PROGRAMA DEL CURSO</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+
+        <p class="program-title">Conocimiento formativo de la raza</p>
+
+      <ul>
+        <li>Estudio de la raza y su estándar.</li>
+        <li>Manto: pelo primario y pelo secundario.</li>
+        <li>Cosmetología aplicada según estructura capilar y porosidad.</li>
+        <li>Organización en el trabajo.</li>
+        <li>Herramientas a utilizar.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+
+        <p class="program-title">Conocimiento formativo de la raza</p>
+
+      <ul>
+        <li>Técnicas de cepillado. Economizar tiempo con máxima efectividad</li>
+        <li>Especificidad del baño: Reconstrucción / Hidratación para el mantenimiento / especifico para el arreglo.</li>
+        <li>Especificidad en el secado: Mantenimiento / Arreglo</li>
+        <li>Recogidos para protección del pelo</li>
+        <li>Prevención de lesiones durante el trabajo</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+
+        <p class="program-title">Aplicación de arreglo estandarizado y técnicas de trabajo</p>
+
+      <ul>
+        <li>Baño específico para el arreglo.</li>
+        <li>Secado y cepillado específico para el arreglo.</li>
+        <li>Arreglo de la raza según la técnica específica requerida.</li>
+        <li>Técnica de máquina.</li>
+        <li>Técnica de Tijera.</li>
+        <li>Técnica de renovación de manto</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <p class="secondary-title">INFORMACIÓN Y PREGUNTAS FRECUENTES </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(1)">
+        <p class="program-title">1. ¿Qué incluye el curso?</p><i *ngIf="id == undefined || id != 1" class="fas fa-chevron-down"></i><i *ngIf="id == 1" class="fas fa-chevron-up"></i>
+      </div>
+      <ul *ngIf="id == 1">
+        <li>Perros de práctica.</li>
+        <li>Material y equipamiento proporcionado por la academia.</li>
+        <li>Información didáctica.</li>
+        <li>Carpeta de apuntes y bolígrafo.</li>
+        <li>Set de fotografías de los trabajos realizados.</li>
+        <li>Diploma y certificado acreditativo de los estudios realizados.</li>
+        <li>Posibilidad de alojamiento económico, en caso de que lo necesites.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(2)">
+        <p class="program-title">2. ¿Qué ofrecemos?</p><i *ngIf="id == undefined || id != 2" class="fas fa-chevron-down"></i><i *ngIf="id == 2" class="fas fa-chevron-up"></i>
+      </div>
+      <p *ngIf="id == 2">Prácticas desde el primer día con la metodología actualizada y progresiva para dar a conocer y practicar todas las técnicas necesarias para ejercer la profesión de peluquero y estilista canino.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(3)">
+        <p class="program-title">3. ¿A quién va dirigido el curso?</p><i *ngIf="id == undefined || id != 3" class="fas fa-chevron-down"></i><i *ngIf="id == 3" class="fas fa-chevron-up"></i>
+      </div>
+      <p *ngIf="id == 3">A profesionales con suficiente experiencia para adentrarse específicamente en cada raza o técnica. Personas que hayan realizado nuestro Curso Técnico Avanzado. </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(4)">
+        <p class="program-title">4. ¿Entregáis título?</p><i *ngIf="id == undefined || id != 4" class="fas fa-chevron-down"></i><i *ngIf="id == 4" class="fas fa-chevron-up"></i>
+      </div>
+      <p *ngIf="id == 4">Toda persona que sea graduada en Emilia Diaz Academy recibirá su título acreditado por nosotros e International Grooming Academy, ambas reconocidas a nivel mundial y capaces de abrirte muchas puertas en la vida laboral.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(5)">
+        <p class="program-title">5. ¿Cómo serán los cursos?</p><i *ngIf="id == undefined || id != 5" class="fas fa-chevron-down"></i><i *ngIf="id == 5" class="fas fa-chevron-up"></i>
+      </div>
+      <p *ngIf="id == 5">Los cursos están organizados para un aprendizaje personalizado con prácticas desde el primer día de clase.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(6)">
+        <p class="program-title">6. ¿Cuántas horas tiene el curso específico por razas?</p><i *ngIf="id == undefined || id != 6" class="fas fa-chevron-down"></i><i *ngIf="id == 6" class="fas fa-chevron-up"></i>
+      </div>
+      <p *ngIf="id == 6">El curso profesional consta de un total de 8 horas, dividido en 2 sesiones de 4 horas. </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(7)">
+        <p class="program-title">7. ¿Dónde se imparte el curso?</p><i *ngIf="id == undefined || id != 7" class="fas fa-chevron-down"></i><i *ngIf="id == 7" class="fas fa-chevron-up"></i>
+      </div>
+      <p *ngIf="id == 7">El curso profesional consta de un total de 8 horas, dividido en 2 sesiones de 4 horas. </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(8)">
+        <p class="program-title">8. ¿Disponen de bolsa de trabajo?</p><i *ngIf="id == undefined || id != 8" class="fas fa-chevron-down"></i><i *ngIf="id == 8" class="fas fa-chevron-up"></i>
+      </div>
+      <p *ngIf="id == 8">En nuestro centro base, ubicado en la localidad de Girona, España. A una hora de Barcelona. </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(9)">
+        <p class="program-title">9. ¿Cuándo empezar?</p><i *ngIf="id == undefined || id != 9" class="fas fa-chevron-down"></i><i *ngIf="id == 9" class="fas fa-chevron-up"></i>
+      </div>
+      <p *ngIf="id == 9">Si, por nuestro prestigio como formadores, disponemos de oferta laboral real para nuestros alumnos.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(10)">
+        <p class="program-title">10. ¿Cuál es el precio del curso? ¿Se puede financiar?</p><i *ngIf="id == undefined || id != 10" class="fas fa-chevron-down"></i><i *ngIf="id == 10" class="fas fa-chevron-up"></i>
+      </div>
+      <p *ngIf="id == 10">El precio es de 450€ IVA Incluido. Para este curso la posibilidad de financiación no estará disponible.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-chevron" (click)="openFaqs(11)">
+        <p class="program-title">11. ¿Dónde puedo llamar y reservar?</p><i *ngIf="id == undefined || id != 11" class="fas fa-chevron-down"></i><i *ngIf="id == 11" class="fas fa-chevron-up"></i>
+      </div>
+      <p *ngIf="id == 11">La compra se puede hacer por nuestra página web directamente y nosotros nos pondremos en contacto contigo para especificar fechas. Para dudas o visitas podéis contactar al <a href="tel:+34678700247">678700247</a> o al correo electrónico <a href="mailto:academy@emiliadiaz.com">academy@emiliadiaz.com</a></p>
+    </div>
+  </div>
+  
 </div>
 
 <footer></footer>
