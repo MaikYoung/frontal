@@ -2,6 +2,12 @@
     background-color: white;
 }
 
+.container-background {
+    background-color: white;
+    z-index: 99;
+    margin-top: 700px;
+}
+
 .card{
     position: relative;
     display: flex;
@@ -32,9 +38,43 @@
 }
 
 .back-tech-superior {
-    background-image: url("/assets/images/b335e311-58ed-4b05-b740-3635f61aa3f3.JPG");
+    background-image: url("/assets/images/cursos-1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     height: 500px;
-    color: white;
+    background-size: 500px;
+}
+
+.back-tech-advance {
+    background-image: url("/assets/images/cursos-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: 500px;
+}
+
+.back-speciality {
+    background-image: url("/assets/images/cursos-3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: 500px;
+}
+
+.text {
+    position: relative;
+    top: 165px;
+    background-color: lightgrey;
+    padding: 10px;
+    opacity: 0.8;
+    color: black;
+    height: 180px;
+}
+.iframe {
+    margin-top: 90px;
+    height: 690px; 
+    width: -webkit-fill-available;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -99;
 }
