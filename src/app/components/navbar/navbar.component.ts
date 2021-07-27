@@ -7,12 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   dropOpen:boolean=false
+  active:string=''
   constructor() { }
 
   ngOnInit() {
+    
   }
 
   showDropMenu(){
     return this.dropOpen = (!this.dropOpen) ? true : false
+  }
+
+  changeActiveMenu(val:string) {
+    this.active = val
   }
 }

@@ -3,23 +3,23 @@
 <div class="container">
     <div class="row intro-bio">
         <div class="col-4 col-xs-12">
-            <img src="" alt="imagen-ed" srcset="">
+            <img src="/assets/images/emilia-frontal.png" alt="imagen-ed" srcset="" height="320px">
         </div>
-        <div class="col-8 col-xs-12" data-aos="fade-down" data-aos-duration="100">
+        <div class="col-8 col-xs-12" data-aos="fade-down" data-aos-duration="100" style="    display: flex;align-items: center;">
             <p>Para ser un gran profesional no es necesario conseguir un campeonato del mundo, pero si es importante la humildad, la capacidad de aprendizaje, el actualizarse constantemente y disfrutar del arte de la peluquería canina. Conseguir combinar todas y cada una de las nuevas técnicas para entregar la pasión y calidad que tus clientes y sus mascotas merecen.</p>
         </div>
     </div>
     <div class="row sections-bio" >
         <div class="col-2"></div>
         <div class="col-4 col-xs-12"  data-aos="fade-right" data-aos-duration="4000">
-            <p class="clickable" (click)="setShowValue('bio')">Biografía</p>
-            <p class="clickable" (click)="setShowValue('sema')">Cursos y seminarios Impartidos</p>
-            <p class="clickable" (click)="setShowValue('semb')">Cursos y seminarios Realizados</p>
+            <p class="clickable" (click)="setShowValue('bio')" [ngClass]="changeActiveClass('bio')">Biografía</p>
+            <p class="clickable" (click)="setShowValue('sema')" [ngClass]="changeActiveClass('sema')">Cursos y seminarios Impartidos</p>
+            <p class="clickable" (click)="setShowValue('semb')" [ngClass]="changeActiveClass('semb')">Cursos y seminarios Realizados</p>
         </div>
         <div class="col-4 col-xs-12"  data-aos="fade-left" data-aos-duration="4000">
-            <p class="clickable" (click)="setShowValue('comp')">Trayectoría como competidora</p>
-            <p class="clickable" (click)="setShowValue('juez')">Trayectoría como jueza</p>
-            <p class="clickable" (click)="setShowValue('recon')">Cargos y reconociminetos</p>
+            <p class="clickable" (click)="setShowValue('comp')" [ngClass]="changeActiveClass('comp')">Trayectoría como competidora</p>
+            <p class="clickable" (click)="setShowValue('juez')" [ngClass]="changeActiveClass('juez')">Trayectoría como jueza</p>
+            <p class="clickable" (click)="setShowValue('recon')" [ngClass]="changeActiveClass('recon')">Cargos y reconociminetos</p>
         </div>
         <div class="col-2"></div>
     </div>

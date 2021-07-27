@@ -45,6 +45,11 @@
     background-size: 500px;
 }
 
+.back-tech-superior:hover{ 
+    position: relative; 
+    top: -5px;
+} 
+
 .back-tech-advance {
     background-image: url("/assets/images/cursos-2.jpg");
     background-position: center;
@@ -52,6 +57,11 @@
     height: 500px;
     background-size: 500px;
 }
+
+.back-tech-advance:hover{ 
+    position: relative; 
+    top: -5px;
+} 
 
 .back-speciality {
     background-image: url("/assets/images/cursos-3.jpg");
@@ -61,14 +71,22 @@
     background-size: 500px;
 }
 
+.back-speciality:hover{ 
+    position: relative; 
+    top: -5px;
+} 
+
 .text {
     position: relative;
-    top: 165px;
+    top: 300px;
     background-color: lightgrey;
     padding: 10px;
     opacity: 0.8;
     color: black;
     height: 180px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .iframe {
     margin-top: 90px;
@@ -78,3 +96,4 @@
     top: 0; right: 0; bottom: 0; left: 0;
     z-index: -99;
 }
+

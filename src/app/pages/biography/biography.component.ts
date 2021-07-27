@@ -19,4 +19,8 @@ export class BiographyComponent implements OnInit {
     this.show = val
   }
 
+  public changeActiveClass(val:string) {
+    return { 'selected': this.show === val }
+  }
+
 }

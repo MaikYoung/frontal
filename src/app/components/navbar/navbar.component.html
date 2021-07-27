@@ -4,10 +4,10 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active lateral-paddings" aria-current="page" href="/biography">Emilia Díaz</a>
+      <div class="navbar-nav" style="font-size: 23px;">
+        <a class="nav-link lateral-paddings" aria-current="page" href="/biography" [class.active]="active == 'bio'" (click)="changeActiveMenu('bio')">Emilia Díaz</a>
         <div class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle clickable lateral-paddings" (click)="showDropMenu()" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle clickable lateral-paddings" (click)="showDropMenu()" [class.active]="active == 'aca'" (click)="changeActiveMenu('aca')" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Academia
           </a>
           <div [class.show]="dropOpen == true" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -15,11 +15,11 @@
             <a class="dropdown-item" href="/iga">IGA</a>
           </div>
         </div>
-        <a class="navbar-brand lateral-paddings" href="/">
+        <a class="navbar-brand lateral-paddings" href="/" [class.active]="active == 'main'" (click)="changeActiveMenu('main')">
           <img src="/assets/images/ed_logo.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
         </a>
-        <a class="nav-link lateral-paddings" href="/courses">Cursos</a>
-        <a class="nav-link lateral-paddings" href="/services">Servicios</a>
+        <a class="nav-link lateral-paddings" href="/courses" [class.active]="active == 'cur'" (click)="changeActiveMenu('cur')">Cursos</a>
+        <a class="nav-link lateral-paddings" href="/services" [class.active]="active == 'ser'" (click)="changeActiveMenu('ser')">Servicios</a>
         <!-- <a class="nav-link lateral-paddings" href="/contact">Contacto</a> -->
       </div>
     </div>

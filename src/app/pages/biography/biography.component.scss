@@ -1,6 +1,8 @@
 .intro-bio{
-    height: 200px;
+    height: 400px;
     margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
 }
 
 .sections-bio{
@@ -9,6 +11,9 @@
 
 .clickable {
     cursor: pointer;
+    padding: 5px;
+    background-color: #ffccff;
+    text-align: center;
 }
 
 .hr{
@@ -16,4 +21,8 @@
     margin-bottom: 40px !important;
     width: 50%;
     margin: auto;
+}
+
+.selected {
+    background-color: #ff66ff !important;
 }

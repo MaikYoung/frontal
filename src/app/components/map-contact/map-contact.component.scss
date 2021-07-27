@@ -1,15 +1,21 @@
 .sponsors-main {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .contact-main {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 20px;
 }
 
-label {
-    margin-top: 5px;
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sponsors-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
