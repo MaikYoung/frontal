@@ -81,3 +81,19 @@
 .btn-check:focus, .btn:focus {
     box-shadow: none !important;
 }
+
+.carousel-img {
+    display: block;
+    margin: auto;
+    width: -webkit-fill-available;
+    height: 700px;
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    z-index: -99;
+}
+
+.container-background {
+    background-color: white;
+    z-index: 99;
+    margin-top: 700px;
+}

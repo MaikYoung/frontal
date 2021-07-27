@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   dropOpen:boolean=false
-  active:string=''
+  activ:string=''
   constructor() { }
 
   ngOnInit() {
@@ -19,6 +19,6 @@ export class NavbarComponent implements OnInit {
   }
 
   changeActiveMenu(val:string) {
-    this.active = val
+    this.activ = val
   }
 }
