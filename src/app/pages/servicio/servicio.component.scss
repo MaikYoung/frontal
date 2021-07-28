@@ -1,0 +1,37 @@
+img {
+    display: block;
+    margin: auto;
+    width: -webkit-fill-available;
+}
+
+
+.intro-text {
+    p {
+       text-align: center; 
+    }
+}
+
+.secondary-title {
+    font-size: 21px;
+    text-transform: uppercase;
+    // text-decoration: underline;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.separator {
+    margin-top: 50px;
+}
+
+.grey {
+    background-color: #EFEFEF;
+    padding: 10px;
+}
+
+.container {
+    margin-top: 120px;
+}
+
+.left {
+    text-align: end;
+}
