@@ -7,11 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-  imagePath:string = ""
+  imagePath:any = []
   imageObj:any = {}
 
   constructor() { 
-    this.imageObj = ["/assets/images/carousel-1.jpg", "/assets/images/carousel-2.jpg", "/assets/images/carousel-3.jpg", ]
+    this.imageObj = [
+      [0, "/assets/images/carousel-2.jpg"], 
+      [1, "/assets/images/carousel-1.jpg"], 
+      [2, "/assets/images/carousel-3.jpg"], 
+    ]
+    
     this.randomImage()
   }
 
@@ -22,9 +27,13 @@ export class MainComponent implements OnInit {
   }
 
   public randomImage() {
-    this.imagePath = this.imageObj[Math.floor(Math.random() * this.imageObj.length)]
-    
-    
+    if(this.imagePath[0] === 0) {
+      this.imagePath = this.imageObj[1]
+    }else if(this.imagePath[0] === 1){
+      this.imagePath = this.imageObj[2]
+    }else{
+      this.imagePath = this.imageObj[0]
+    }
   }
 
   

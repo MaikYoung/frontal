@@ -4,7 +4,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-      <div class="navbar-nav" style="font-size: 23px;">
+      <div class="navbar-nav" style="font-size: 21px; align-items: center; text-transform: uppercase;">
         <a class="nav-link lateral-paddings" aria-current="page" href="/biography" >Emilia Díaz</a>
         <div class="nav-item dropdown">
           <a class="nav-link dropdown-toggle clickable lateral-paddings" (click)="showDropMenu()"   id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -16,9 +16,18 @@
           </div>
         </div>
         <a class="navbar-brand lateral-paddings" href="/" >
-          <img src="/assets/images/ed_logo.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          <img src="/assets/images/ed_logo.png" alt="" width="60" height="55" class="d-inline-block align-text-top">
         </a>
-        <a class="nav-link lateral-paddings" href="/courses" >Cursos</a>
+        <div (mouseover)="dropCourse=true" (mouseout)="dropCourse=false" class="nav-item dropdown cursos">
+          <a class="nav-link dropdown-toggle clickable lateral-paddings" (click)="showDropCourses()" href="/courses" id="navbarDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Cursos
+          </a>
+          <div [hidden]="dropCourse == true" class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
+            <a class="dropdown-item" href="/courses/superior-technician">Técnico Superior</a>
+            <a class="dropdown-item" href="/courses/advanced-technician">Técnico Avanzado</a>
+            <a class="dropdown-item" href="/courses/technical-specialization">Especialización Tecnica</a>
+          </div>
+        </div>
         <a class="nav-link lateral-paddings" href="/services" >Servicios</a>
         <!-- <a class="nav-link lateral-paddings" href="/contact">Contacto</a> -->
       </div>
