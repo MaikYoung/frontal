@@ -1,6 +1,15 @@
 <navbar></navbar>
 
-<img src={{imagePath[1]}} alt="carousel" srcset="" class="carousel-img">
+  <div style="height: 700px;">
+    <img src="/assets/images/carousel-2.jpg" alt="carousel" srcset="" class="carousel-img " *ngIf="imagePath==0" [class.transition]="loadStyle">
+
+    <img src="/assets/images/carousel-1.jpg" alt="carousel" srcset="" class="carousel-img " *ngIf="imagePath==1" [class.transition]="loadStyle">
+
+    <img src="/assets/images/carousel-3.jpg" alt="carousel" srcset="" class="carousel-img " *ngIf="imagePath==2" [class.transition]="loadStyle">
+  </div>
+
+
+
 
 <div class="container-background">
 
@@ -61,30 +70,35 @@
       </div>
     </div>
   </div>
-<div>
 
-  <div class="row motto-section" data-aos="fade-right" data-aos-duration="4000">
-    <div class="col-8 col-xs-12 left">
-      <p>
-        La peluquería canina ha sido mi pasión desde hace más de 30 años, consiguiendo grandes logros a nivel competitivo al igual que juzgando las mejores competiciones del mundo. Gracias a todo este conocimiento y experiencia he conseguido transmitir a más de 12.000 personas durante toda mi carrera el arte del estilismo canino, ayudándoles a conseguir su sueño: 
-      </p>
-      <p class="left-down">
-        Vivir de la peluquería canina.
-      </p>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-      <img class="img-responsive" src="/assets/images/emilia-lado.png" alt="emilia" srcset="" style="width: -webkit-fill-available;">
-    </div>
-  </div>
-  <div style="height: 500px;"></div>
-  <div class="row comment-main">
-    <div class="col-12">
-      <p>OPINIONES DE ALUMNOS / CAROUSEL</p>
+
+    <div class="row motto-section" data-aos="fade-right" data-aos-duration="4000">
+      <div class="col-8 col-xs-12 left">
+        <p>
+          La peluquería canina ha sido mi pasión desde hace más de 30 años, consiguiendo grandes logros a nivel competitivo al igual que juzgando las mejores competiciones del mundo. Gracias a todo este conocimiento y experiencia he conseguido transmitir a más de 12.000 personas durante toda mi carrera el arte del estilismo canino, ayudándoles a conseguir su sueño: 
+        </p>
+        <p class="left-down">
+          Vivir de la peluquería canina.
+        </p>
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        <img class="img-responsive" src="/assets/images/emilia-lado.png" alt="emilia" srcset="" style="width: -webkit-fill-available;">
+      </div>
     </div>
   </div>
 </div>
-<map-contact></map-contact>
-</div>
+
+<div class="background-img"></div>
+
+<div class="container-background">
+  <div class="container" style="margin-top: 0px!important;">
+    <div class="row comment-main">
+      <div class="col-12">
+        <p>OPINIONES DE ALUMNOS / CAROUSEL</p>
+      </div>
+    </div>
+  <map-contact></map-contact>
+  </div>
 </div>
 <footer></footer>
 

@@ -14,12 +14,12 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
-  showDropMenu(){
-    return this.dropOpen = (!this.dropOpen) ? true : false
+  mouseOverOut(val:boolean){
+    return this.dropCourse = val
   }
 
-  showDropCourses(){
-    return this.dropCourse = (!this.dropCourse) ? true : false
+  mouseOverOut2(val:boolean){
+    return this.dropOpen = val
   }
 
   changeActiveMenu(val:string) {

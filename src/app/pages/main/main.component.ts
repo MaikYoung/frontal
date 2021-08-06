@@ -7,33 +7,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-  imagePath:any = []
-  imageObj:any = {}
-
+  imagePath:number = undefined
+  loadStyle:boolean = false
   constructor() { 
-    this.imageObj = [
-      [0, "/assets/images/carousel-2.jpg"], 
-      [1, "/assets/images/carousel-1.jpg"], 
-      [2, "/assets/images/carousel-3.jpg"], 
-    ]
-    
     this.randomImage()
   }
 
   ngOnInit() {
    setInterval(() => {
      this.randomImage()
-   }, 4000)
+   }, 5000)
   }
 
-  public randomImage() {
-    if(this.imagePath[0] === 0) {
-      this.imagePath = this.imageObj[1]
-    }else if(this.imagePath[0] === 1){
-      this.imagePath = this.imageObj[2]
+  randomImage() {
+    this.loadStyle = false
+    if(this.imagePath == 0){
+      this.imagePath = 1
+    }else if(this.imagePath == 1){
+      this.imagePath = 2
     }else{
-      this.imagePath = this.imageObj[0]
+      this.imagePath = 0
     }
+    setInterval(() => {
+      this.loadStyle = true
+    }, 0.1);
   }
 
   
