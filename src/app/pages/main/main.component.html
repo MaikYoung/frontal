@@ -94,9 +94,24 @@
   <div class="container" style="margin-top: 0px!important;">
     <div class="row comment-main">
       <div class="col-12">
-        <p>OPINIONES DE ALUMNOS / CAROUSEL</p>
+        <p style="text-align: center;" class="left-down">La opinión de nuestros alumnos nos avala</p>
       </div>
     </div>
+
+    <div class="row">
+      <div *ngFor="let item of reviewItems" class="col-4">
+        
+        
+
+          <iframe width="560" height="315" src="{{item.src | safe}}" frameborder="0" ></iframe> 
+
+        
+          
+      </div>
+    </div> 
+        
+
+
   <map-contact></map-contact>
   </div>
 </div>

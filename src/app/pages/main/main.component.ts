@@ -9,11 +9,19 @@ import { Component, OnInit } from '@angular/core';
 export class MainComponent implements OnInit {
   imagePath:number = undefined
   loadStyle:boolean = false
-  constructor() { 
+  reviewItems:any = [
+    {"id": 1, "src": "https://www.youtube.com/embed/vQxJVjMGu8Q"},
+    {"id": 2, "src": "https://www.youtube.com/embed/vQxJVjMGu8Q"},
+    {"id": 3, "src": "https://www.youtube.com/embed/vQxJVjMGu8Q"},
+  ]
+  constructor(
+    
+  ) { 
     this.randomImage()
   }
 
   ngOnInit() {
+
    setInterval(() => {
      this.randomImage()
    }, 5000)

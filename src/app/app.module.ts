@@ -21,6 +21,7 @@ import { TecnicoSuperiorComponent } from './pages/tecnico-superior/tecnico-super
 import { TecnicoAvanzadoComponent } from './pages/tecnico-avanzado/tecnico-avanzado.component';
 import { EspecializacionTecnicaComponent } from './pages/especializacion-tecnica/especializacion-tecnica.component';
 import { MapContactComponent } from './components/map-contact/map-contact.component';
+import { SafePipe } from './pipes/safe.pipe';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { MapContactComponent } from './components/map-contact/map-contact.compon
     TecnicoSuperiorComponent,
     TecnicoAvanzadoComponent,
     EspecializacionTecnicaComponent,
-    MapContactComponent
+    MapContactComponent,
+    SafePipe,
   ],
   imports: [
     BrowserModule,
