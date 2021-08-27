@@ -18,29 +18,37 @@
       <p>“Contamos con bolsa de trabajo real y activa. Si lo que te propones es trabajar, podemos ayudarte”</p>
     </div>
   </div>
+</div>
+<div class="container-fluid">
   <div class="row" style="background-color:#EFEFEFEF;">
     <div class="col-12">
       <p class="secondary-title">PILARES DEL CURSO</p>
     </div>
   </div>
   <div class="row" style="background-color:#EFEFEFEF; padding: 10px; margin-bottom: 30px;">
-    <div class="col-xs-12 col-sm-3" style="border-right:1px solid black;">
+    <div class="col-xs-12 col-sm-3 text-center" style="border-right:1px solid black;">
+      <i class="fas fa-clock icon"></i>
       <p class="course-title">300 horas prácticas </p>
 <p>En Emilia Diaz Academy damos importancia a la teoría y la práctica, priorizando sobre todo esta última. Somos el curso que más horas prácticas ofrece lo cual marcará diferencia en tu preparación y confianza.</p>
       </div>
-      <div class="col-xs-12 col-sm-3" style="border-right:1px solid black;">
+      <div class="col-xs-12 col-sm-3 text-center" style="border-right:1px solid black;">
+        <i class="fas fa-cut icon"></i> 
       <p class="course-title">Conocimiento de la técnica</p>
 <p>Aprende de manera progresiva y metódica todas las técnicas claves para ser capaz de realizar cualquier trabajo. Tengas o no experiencia previa las dominarás todas.</p>
 </div>
-<div class="col-xs-12 col-sm-3" style="border-right:1px solid black;">
+<div class="col-xs-12 col-sm-3 text-center" style="border-right:1px solid black;">
+  <i class="fas fa-school icon"></i>
       <p class="course-title">Conocimiento y adaptación a cada zona de trabajo</p>
 <p>Aprenderás a utilizar a tu favor cada centímetro del espacio que tengas disponible, para así optimizar tiempo y esfuerzo aumentando tu rendimiento al máximo.</p>
 </div>
-<div class="col-xs-12 col-sm-3" >
+<div class="col-xs-12 col-sm-3 text-center" >
+  <i class="fas fa-mug-hot icon"></i>
       <p class="course-title">Conocimiento del cliente</p>
 <p>Aprenderás a fidelizar al cliente a través de generar grandes vínculos, aprendiendo diferentes técnicas para aumentar su confianza y mejorar aún más su experiencia.</p>
     </div>
   </div>
+</div>
+<div class="container">
   <div class="row">
     <div class="col-12">
       <p class="secondary-title">PROGRAMA DEL CURSO</p>
@@ -48,9 +56,9 @@
   </div>
   <div class="row">
     <div class="col-12">
-      <p class="program-title">Gestión de un establecimiento de cuidados higiénicos y estéticos de animales de compañía</p>
+      <p class="program-title pink-background" (click)="openProgram(1)">Gestión de un establecimiento de cuidados higiénicos y estéticos de animales de compañía</p>
     </div>
-    <div class="col-12">
+    <div class="col-12" *ngIf="idProgram == 1">
       <ul>
         <li>Tareas a desarrollar en un establecimiento.</li>
         <li>Atención al cliente y gestión de la información.</li>
@@ -67,9 +75,9 @@
   </div>
   <div class="row">
     <div class="col-12">
-      <p class="program-title">Aprendizaje para valoración inicial de las condiciones de pelo y piel según especie y raza </p>
+      <p class="program-title pink-background" (click)="openProgram(2)">Aprendizaje para valoración inicial de las condiciones de pelo y piel según especie y raza </p>
     </div>
-    <div class="col-12">
+    <div class="col-12" *ngIf="idProgram == 2">
       <ul>
         <li>Piel y manto.</li>
         <li>Conocimientos de razas.</li>
@@ -81,9 +89,9 @@
   </div>
   <div class="row">  
     <div class="col-12">
-      <p class="program-title">Cepillado y peluquería higiénica</p>
+      <p class="program-title pink-background" (click)="openProgram(3)">Cepillado y peluquería higiénica</p>
     </div>
-    <div class="col-12">
+    <div class="col-12" *ngIf="idProgram == 3">
       <ul>
         <li>Aprendizaje de los diferentes tipos de pelo, sus características, estructura y estado.</li>
         <li>Técnica mecánica del cepillado.</li>
@@ -95,9 +103,9 @@
   </div>
   <div class="row">  
     <div class="col-12">
-      <p class="program-title">Baño</p>
+      <p class="program-title pink-background" (click)="openProgram(4)">Baño</p>
     </div>
-    <div class="col-12">
+    <div class="col-12" *ngIf="idProgram == 4">
       <ul>
         <li>Cosmetología aplicada según el manto a tratar.</li>
         <li>Mecanismos y medios técnicos de manipulación del animal en zona húmeda.</li>
@@ -107,9 +115,9 @@
   </div>
   <div class="row">  
     <div class="col-12">
-      <p class="program-title">Secado</p>
+      <p class="program-title pink-background" (click)="openProgram(5)">Secado</p>
     </div>
-    <div class="col-12">
+    <div class="col-12" *ngIf="idProgram == 5">
       <ul>
         <li>Herramientas, material de secado y utilización de las mismsa.</li>
         <li>Técnicas de secado genericas en función del tipo de pelo a trabajar.</li>
@@ -119,9 +127,9 @@
   </div>
   <div class="row">  
     <div class="col-12">
-      <p class="program-title">Primeros auxilios</p>
+      <p class="program-title pink-background" (click)="openProgram(6)">Primeros auxilios</p>
     </div>
-    <div class="col-12">
+    <div class="col-12" *ngIf="idProgram == 6">
       <ul>
         <li>Heridas superficiales de tejidos blandos.</li>
         <li>Cuerpos extraños.</li>
@@ -133,9 +141,9 @@
   </div>
   <div class="row">  
     <div class="col-12">
-      <p class="program-title">Corte de mantos mediante técnica de máquina</p>
+      <p class="program-title pink-background" (click)="openProgram(7)">Corte de mantos mediante técnica de máquina</p>
     </div>
-    <div class="col-12">
+    <div class="col-12" *ngIf="idProgram == 7">
       <ul>
         <li>Estudio de la máquina, de las distintas cuchillas y recalces o acopladores.</li>
         <li>Manejo de la máquina de corte.</li>
@@ -147,9 +155,9 @@
   </div>
   <div class="row">  
     <div class="col-12">
-      <p class="program-title">Corte de mantos mediante técnica a tijera </p>
+      <p class="program-title pink-background" (click)="openProgram(8)">Corte de mantos mediante técnica a tijera </p>
     </div>
-    <div class="col-12">
+    <div class="col-12" *ngIf="idProgram == 8">
       <ul>
         <li>Anatomía de la tijera.</li>
         <li>Estudio de las diferentes tipos de tijera.</li>
@@ -163,9 +171,9 @@
   </div>
   <div class="row">  
     <div class="col-12">
-      <p class="program-title">Renovación de mantos mediante técnicas manuales</p>
+      <p class="program-title pink-background" (click)="openProgram(9)">Renovación de mantos mediante técnicas manuales</p>
     </div>
-    <div class="col-12">
+    <div class="col-12" *ngIf="idProgram == 9">
       <ul>
         <li>Técnica de renovación del manto.</li>
         <li>Materiales para renovación de los diferentes tipos de mantos.</li>
