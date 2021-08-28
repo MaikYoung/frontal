@@ -44,9 +44,7 @@
     }
 }
 
-.card-footer{
-    background-color: white;
-}
+
 
 .margin-bottom {
     margin-bottom: 30px;
@@ -58,24 +56,13 @@
     justify-content: center;
 }
 
-.card{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid #ccccff;
-    border-radius: .25rem;
-    width: 100%;
-}
+
 
 .btn-primary {
     color: white;
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(255,153,255,1) 0%, rgba(255,204,255,1) 100%);
+    background: #C00042;
     border-color: white;
-    width: 60%;
+    width: 40%;
     margin: auto;
 }
 
@@ -118,5 +105,31 @@
     margin-top: 20px;
     font-weight: 700;
     font-size: 33px;
+}
+
+.back-academy {
+    background-image: url("/assets/images/cursos-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: 500px;
+}
+
+.back-academy:hover{ 
+    position: relative; 
+    top: -20px;
+} 
+
+.text {
+    position: relative;
+    top: 300px;
+    background-color: lightgrey;
+    padding: 10px;
+    opacity: 0.8;
+    color: black;
+    height: 180px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
