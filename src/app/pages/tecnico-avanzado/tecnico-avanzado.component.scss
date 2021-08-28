@@ -32,6 +32,8 @@
 
 .course-title {
     font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 .text-chevron {
@@ -43,4 +45,47 @@
 .program-title {
     font-weight: bold;
     margin-top: 10px;
+    cursor: pointer;
+}
+
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pink-background {
+    background-color: #ffccff;
+    padding-left: 5px;
+}
+
+.background-img {
+    background-image: url('/assets/images/carpetas.jpg');
+  /* Set a specific height */
+  min-height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.iframe {
+    margin-top: 90px;
+    height: 690px; 
+    width: -webkit-fill-available;
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    z-index: -99;
+}
+
+.container-background {
+    background-color: white;
+    z-index: 99;
+    margin-top: 700px;
 }

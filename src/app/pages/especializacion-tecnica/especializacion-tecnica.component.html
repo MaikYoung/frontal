@@ -1,5 +1,9 @@
 <navbar></navbar>
+<iframe class="iframe" src="https://www.youtube.com/embed/vQxJVjMGu8Q?fs=0&controls=0&autoplay=1&start=1&rel=0&showinfo=1?modestbranding=0" title="IGA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; s" allowfullscreen></iframe>
 
+
+
+<div class="container-background">
 <div class="container">
   <div class="row">
     <div class="col-12">
@@ -17,32 +21,37 @@
       <p>“CON ESTA FORMACIÓN CONSEGUIRÁS CONVERTIRTE EN EL EXPERTO QUE SIEMPRE HAS DESEADO DE TU RAZA FAVORITA”</p>
     </div>
   </div>
+</div>
+<div class="container-fluid">
   <div class="row"  style="background-color:#EFEFEFEF;">
     <div class="col-12">
       <p class="secondary-title">PILARES DEL CURSO</p>
     </div>
   </div>
   <div class="row" style="background-color:#EFEFEFEF; padding: 10px; margin-bottom: 30px;">
-    <div class="col-xs-12 col-sm-3" style="border-right:1px solid black;">
+    <div class="col-xs-12 col-sm-3 text-center" style="border-right:1px solid black;">
+      <i class="fas fa-dog icon"></i>
       <p class="course-title">Profundización de la raza</p>
       <p>Nos adentramos al máximo en la raza seleccionada para que durante las 8 horas de práctica seas capaz de convertirte en un/a experto/a en ella. Los detalles importan, y en este curso serás consciente de ello.</p>
       </div>
-      <div class="col-xs-12 col-sm-3" style="border-right:1px solid black;">
-
+      <div class="col-xs-12 col-sm-3 text-center" style="border-right:1px solid black;">
+        <i class="fas fa-cut icon"></i> 
       <p class="course-title">Profundización de la técnica</p>
       <p>También atacaremos en profundidad la técnica que utilizaremos para trabajar en la raza, fijándonos en detalles específicos para mejorar el rendimiento y que aumenten la facilidad del trabajo.</p>
       </div>
-      <div class="col-xs-12 col-sm-3" style="border-right:1px solid black;">
-
+      <div class="col-xs-12 col-sm-3 text-center" style="border-right:1px solid black;">
+        <i class="fas fa-people-arrows icon"></i>
       <p class="course-title">Adaptación</p>
       <p>El curso es 100% personalizado según las necesidades del alumnx, adaptando técnicas y preparando las razas según las que la persona quiera profundizar.</p>
       </div>
-      <div class="col-xs-12 col-sm-3">
-
+      <div class="col-xs-12 col-sm-3 text-center">
+        <i class="fas fa-bath icon"></i>
       <p class="course-title">Tratamiento Específico</p>
       <p>Para cada raza es necesario utilizar el tratamiento correspondiente. Veremos en detalle los mejores pasos para seguir en su pre y post baño que ayudarán a conseguir un resultado aún más magnífico.</p>
     </div>
   </div>
+</div>
+<div class="container">
   <div class="row">
     <div class="col-12">
       <p class="secondary-title">PROGRAMA DEL CURSO</p>
@@ -51,9 +60,9 @@
   <div class="row">
     <div class="col-12">
 
-        <p class="program-title">Conocimiento formativo de la raza</p>
+        <p class="pink-background program-title" (click)="openProgram(1)">Conocimiento formativo de la raza</p>
 
-      <ul>
+      <ul *ngIf="idProgram == 1">
         <li>Estudio de la raza y su estándar.</li>
         <li>Manto: pelo primario y pelo secundario.</li>
         <li>Cosmetología aplicada según estructura capilar y porosidad.</li>
@@ -65,9 +74,9 @@
   <div class="row">
     <div class="col-12">
 
-        <p class="program-title">Conocimiento formativo de la raza</p>
+        <p class="pink-background program-title" (click)="openProgram(2)">Conocimiento formativo de la raza</p>
 
-      <ul>
+      <ul *ngIf="idProgram == 2">
         <li>Técnicas de cepillado. Economizar tiempo con máxima efectividad</li>
         <li>Especificidad del baño: Reconstrucción / Hidratación para el mantenimiento / especifico para el arreglo.</li>
         <li>Especificidad en el secado: Mantenimiento / Arreglo</li>
@@ -79,9 +88,9 @@
   <div class="row">
     <div class="col-12">
 
-        <p class="program-title">Aplicación de arreglo estandarizado y técnicas de trabajo</p>
+        <p class="pink-background program-title" (click)="openProgram(3)">Aplicación de arreglo estandarizado y técnicas de trabajo</p>
 
-      <ul>
+      <ul *ngIf="idProgram == 3">
         <li>Baño específico para el arreglo.</li>
         <li>Secado y cepillado específico para el arreglo.</li>
         <li>Arreglo de la raza según la técnica específica requerida.</li>
@@ -91,6 +100,11 @@
       </ul>
     </div>
   </div>
+</div>
+</div>
+  <div class="background-img"></div>
+  <div class="container-background" style="margin-top: 0px!important;">
+  <div class="container" style="margin-top: 0px!important;">
   <div class="row">
     <div class="col-12">
       <p class="secondary-title">INFORMACIÓN Y PREGUNTAS FRECUENTES </p>

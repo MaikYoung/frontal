@@ -14,11 +14,23 @@ export class TecnicoSuperiorComponent implements OnInit {
   }
 
   public openFaqs(id:number) {
-    return this.id = (this.id == undefined) ? this.id = id : this.id = id
+    if(this.id == undefined){
+      this.id = id
+    }else if (this.id == id) {
+      this.id = undefined
+    }else{
+      this.id = id
+    }
   }
 
   public openProgram(id:number) {
-    return this.idProgram = (this.idProgram == undefined) ? this.idProgram = id : this.idProgram = id
+    if(this.idProgram == undefined){
+      this.idProgram = id
+    }else if (this.idProgram == id) {
+      this.idProgram = undefined
+    }else{
+      this.idProgram = id
+    }
   }
 
 }
