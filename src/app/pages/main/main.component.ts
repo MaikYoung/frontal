@@ -1,3 +1,4 @@
+import { NgSwitch } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 
@@ -9,11 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class MainComponent implements OnInit {
   imagePath:number = undefined
   loadStyle:boolean = false
-  reviewItems:any = [
-    {"id": 1, "src": "https://www.youtube.com/embed/vQxJVjMGu8Q"},
-    {"id": 2, "src": "https://www.youtube.com/embed/vQxJVjMGu8Q"},
-    {"id": 3, "src": "https://www.youtube.com/embed/vQxJVjMGu8Q"},
-  ]
+  reviewActive:number = 2
   constructor(
     
   ) { 
@@ -41,6 +38,21 @@ export class MainComponent implements OnInit {
     }, 0.1);
   }
 
+  changeReviewActive(action:string) {
+    if(action == '++'){
+      if(this.reviewActive == 3){
+        return this.reviewActive = 1
+      }
+      this.reviewActive++
+    }else if (action == '--'){
+      if(this.reviewActive == 1){
+        return this.reviewActive = 3
+      }
+      this.reviewActive--
+    }else{
+      this.reviewActive = 2
+    }
+  }
   
   
 

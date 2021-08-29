@@ -14,4 +14,21 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    img:hover {
+        opacity: 0.5;
+    }
+}
+
+a {
+    color: #C00042;
+}
+
+.button-style {
+    display: block;
+    margin: auto;
+    width: 50%;
+    color: white;
+    background: #C00042;
+    border-color: white;
 }

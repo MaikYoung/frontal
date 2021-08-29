@@ -16,6 +16,7 @@ import { TecnicoSuperiorComponent } from './pages/tecnico-superior/tecnico-super
 import { TecnicoAvanzadoComponent } from './pages/tecnico-avanzado/tecnico-avanzado.component';
 import { EspecializacionTecnicaComponent } from './pages/especializacion-tecnica/especializacion-tecnica.component';
 import { combineLatest } from 'rxjs';
+import { StoreComponent } from './pages/store/store.component';
 
 const routes: Routes = [
   {
@@ -57,6 +58,10 @@ const routes: Routes = [
   {
     path: 'iga',
     component: IgaComponent
+  },
+  {
+    path: 'store',
+    component: StoreComponent
   },
   {
     path: 'terms-of-use',

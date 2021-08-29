@@ -106,22 +106,29 @@
     </div>
 
     <div class="row">
-      <div *ngFor="let item of reviewItems" class="col-4">
-        
-        
-
-          <iframe width="560" height="315" src="{{item.src | safe}}" frameborder="0" ></iframe> 
-
-        
-          
-      </div>
-    </div> 
+        <div class="col-xs-12 col-sm-1" (click)="changeReviewActive('--')">
+          <i class="fas fa-chevron-left icon"></i>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <iframe [class.iframe-active]="reviewActive == 1" class="iframe-reviews" src="https://www.youtube.com/embed/F_3IROu046g?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <iframe [class.iframe-active]="reviewActive == 2" class="iframe-reviews" src="https://www.youtube.com/embed/F_3IROu046g?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <iframe [class.iframe-active]="reviewActive == 3" class="iframe-reviews" src="https://www.youtube.com/embed/F_3IROu046g?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-xs-12 col-sm-1"  (click)="changeReviewActive('++')">
+          <i class="fas fa-chevron-right icon icon-left"></i>
+        </div>
+ </div> 
         
 
 
   </div>
   <map-contact></map-contact>
 </div>
+<social-network></social-network>
 <footer></footer>
 
 
