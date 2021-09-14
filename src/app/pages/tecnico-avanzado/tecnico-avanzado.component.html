@@ -28,21 +28,21 @@
     </div>
   </div>
   <div class="row" style="background-color:#EFEFEFEF; padding: 10px; margin-bottom: 30px;">
-    <div class="col-xs-12 col-sm-3 text-center" style="border-right:1px solid black;">
+    <div class="col-xs-12 col-sm-3 text-center" style="border-right:2px solid black;">
       <i class="fas fa-clock icon"></i>
       <p class="course-title">40 horas prácticas </p>
 
       <p>Adaptamos una gran cantidad de información en 40 horas, para así conseguir que cualquier profesional sea capaz de compatibilizarlo con su actividad laboral. 40 horas prácticas exigentes que sacaran lo mejor de ti.</p>
     </div>
 
-    <div class="col-xs-12 col-sm-3 text-center" style="border-right:1px solid black;">
+    <div class="col-xs-12 col-sm-3 text-center" style="border-right:2px solid black;">
       <i class="fas fa-cut icon"></i> 
       <p class="course-title">Profundización de la técnica</p>
 
       <p>Trataremos en profundidad cada una de las técnicas principales para que mejores cada una de ellas. Domina, automatiza y preocúpate de cada mínimo detalle para conseguir un resultado perfecto.</p>
     </div>
 
-    <div class="col-xs-12 col-sm-3 text-center" style="border-right:1px solid black;">
+    <div class="col-xs-12 col-sm-3 text-center" style="border-right:2px solid black;">
       <i class="fas fa-rocket icon"></i>
       <p class="course-title">Especificidad</p>
 
@@ -64,7 +64,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-12" (click)="openProgram(1)"><p class="pink-background course-title">Gestión</p></div>
+    <div class="col-12" (click)="openProgram(1)"><p class="pink-background course-title">Gestión<i *ngIf="idProgram == undefined || idProgram != 1" class="fas fa-plus"></i><i *ngIf="idProgram == 1" class="fas fa-minus"></i></p></div>
     <div class="col-12" *ngIf="idProgram == 1">
       <ul>
         <li>Atención al cliente y gestión de la información.</li>
@@ -75,7 +75,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-12" (click)="openProgram(2)"><p class="pink-background course-title">Cuidados higiénicos específicos</p></div>
+    <div class="col-12" (click)="openProgram(2)"><p class="pink-background course-title">Cuidados higiénicos específicos<i *ngIf="idProgram == undefined || idProgram != 2" class="fas fa-plus"></i><i *ngIf="idProgram == 2" class="fas fa-minus"></i></p></div>
     <div class="col-12" *ngIf="idProgram == 2">
       <ul>
         <li>Cepillado según el pelo a tratar.</li>
@@ -85,8 +85,8 @@
        </ul>
     </div>
   </div>
-  <div class="row">
-    <div class="col-12" (click)="openProgram(3)"><p class="pink-background course-title">Aplicación de arreglos estéticos según la técnica a trabajar</p></div>
+  <div class="row" style="padding-bottom: 50px;">
+    <div class="col-12" (click)="openProgram(3)"><p class="pink-background course-title">Aplicación de arreglos estéticos según la técnica a trabajar<i *ngIf="idProgram == undefined || idProgram != 3" class="fas fa-plus"></i><i *ngIf="idProgram == 3" class="fas fa-minus"></i></p></div>
     <div class="col-12" *ngIf="idProgram == 3">
       <ul>
         <li>Corte de mantos mediante técnica a tijera.</li>
@@ -100,7 +100,7 @@
 </div>
 
   <div class="background-img"></div>
-  <div class="container-background" style="margin-top: 0px!important;">
+  <div class="container-background" style="margin-top: 0px!important; padding-top: 40px;">
 <div class="container" style="margin-top: 0px!important;">
   <div class="row">
     <div class="col-12">

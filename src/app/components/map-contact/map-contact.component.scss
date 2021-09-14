@@ -1,13 +1,26 @@
 .sponsors-main {
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
 }
 
 
 input {
     margin-top: 10px;
     margin-bottom: 10px;
+    background-color: darkgray;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+  }
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
 }
 
 .sponsors-flex {
@@ -31,4 +44,10 @@ a {
     color: white;
     background: #C00042;
     border-color: white;
+}
+
+.grey {
+    background-color: #EFEFEF;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

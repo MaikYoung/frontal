@@ -29,17 +29,17 @@
     </div>
   </div>
   <div class="row" style="background-color:#EFEFEFEF; padding: 10px; margin-bottom: 30px;">
-    <div class="col-xs-12 col-sm-3 text-center" style="border-right:1px solid black;">
+    <div class="col-xs-12 col-sm-3 text-center" style="border-right:2px solid black;">
       <i class="fas fa-clock icon"></i>
       <p class="course-title">300 horas prácticas </p>
 <p>En Emilia Diaz Academy damos importancia a la teoría y la práctica, priorizando sobre todo esta última. Somos el curso que más horas prácticas ofrece lo cual marcará diferencia en tu preparación y confianza.</p>
       </div>
-      <div class="col-xs-12 col-sm-3 text-center" style="border-right:1px solid black;">
+      <div class="col-xs-12 col-sm-3 text-center" style="border-right:2px solid black;">
         <i class="fas fa-cut icon"></i> 
       <p class="course-title">Conocimiento de la técnica</p>
 <p>Aprende de manera progresiva y metódica todas las técnicas claves para ser capaz de realizar cualquier trabajo. Tengas o no experiencia previa las dominarás todas.</p>
 </div>
-<div class="col-xs-12 col-sm-3 text-center" style="border-right:1px solid black;">
+<div class="col-xs-12 col-sm-3 text-center" style="border-right:2px solid black;">
   <i class="fas fa-school icon"></i>
       <p class="course-title">Conocimiento y adaptación a cada zona de trabajo</p>
 <p>Aprenderás a utilizar a tu favor cada centímetro del espacio que tengas disponible, para así optimizar tiempo y esfuerzo aumentando tu rendimiento al máximo.</p>
@@ -59,7 +59,7 @@
   </div>
   <div class="row">
     <div class="col-12">
-      <p class="program-title pink-background" (click)="openProgram(1)">Gestión de un establecimiento de cuidados higiénicos y estéticos de animales de compañía</p>
+      <p class="program-title pink-background" (click)="openProgram(1)">Gestión de un establecimiento de cuidados higiénicos y estéticos de animales de compañía<i *ngIf="idProgram == undefined || idProgram != 1" class="fas fa-plus"></i><i *ngIf="idProgram == 1" class="fas fa-minus"></i></p>
     </div>
     <div class="col-12" *ngIf="idProgram == 1">
       <ul>
@@ -78,7 +78,7 @@
   </div>
   <div class="row">
     <div class="col-12">
-      <p class="program-title pink-background" (click)="openProgram(2)">Aprendizaje para valoración inicial de las condiciones de pelo y piel según especie y raza </p>
+      <p class="program-title pink-background" (click)="openProgram(2)">Aprendizaje para valoración inicial de las condiciones de pelo y piel según especie y raza <i *ngIf="idProgram == undefined || idProgram != 2" class="fas fa-plus"></i><i *ngIf="idProgram == 2" class="fas fa-minus"></i></p>
     </div>
     <div class="col-12" *ngIf="idProgram == 2">
       <ul>
@@ -92,7 +92,7 @@
   </div>
   <div class="row">  
     <div class="col-12">
-      <p class="program-title pink-background" (click)="openProgram(3)">Cepillado y peluquería higiénica</p>
+      <p class="program-title pink-background" (click)="openProgram(3)">Cepillado y peluquería higiénica<i *ngIf="idProgram == undefined || idProgram != 3" class="fas fa-plus"></i><i *ngIf="idProgram == 3" class="fas fa-minus"></i></p>
     </div>
     <div class="col-12" *ngIf="idProgram == 3">
       <ul>
@@ -106,7 +106,7 @@
   </div>
   <div class="row">  
     <div class="col-12">
-      <p class="program-title pink-background" (click)="openProgram(4)">Baño</p>
+      <p class="program-title pink-background" (click)="openProgram(4)">Baño<i *ngIf="idProgram == undefined || idProgram != 4" class="fas fa-plus"></i><i *ngIf="idProgram == 4" class="fas fa-minus"></i></p>
     </div>
     <div class="col-12" *ngIf="idProgram == 4">
       <ul>
@@ -118,7 +118,7 @@
   </div>
   <div class="row">  
     <div class="col-12">
-      <p class="program-title pink-background" (click)="openProgram(5)">Secado</p>
+      <p class="program-title pink-background" (click)="openProgram(5)">Secado<i *ngIf="idProgram == undefined || idProgram != 5" class="fas fa-plus"></i><i *ngIf="idProgram == 5" class="fas fa-minus"></i></p>
     </div>
     <div class="col-12" *ngIf="idProgram == 5">
       <ul>
@@ -130,7 +130,7 @@
   </div>
   <div class="row">  
     <div class="col-12">
-      <p class="program-title pink-background" (click)="openProgram(6)">Primeros auxilios</p>
+      <p class="program-title pink-background" (click)="openProgram(6)">Primeros auxilios<i *ngIf="idProgram == undefined || idProgram != 6" class="fas fa-plus"></i><i *ngIf="idProgram == 6" class="fas fa-minus"></i></p>
     </div>
     <div class="col-12" *ngIf="idProgram == 6">
       <ul>
@@ -144,7 +144,7 @@
   </div>
   <div class="row">  
     <div class="col-12">
-      <p class="program-title pink-background" (click)="openProgram(7)">Corte de mantos mediante técnica de máquina</p>
+      <p class="program-title pink-background" (click)="openProgram(7)">Corte de mantos mediante técnica de máquina<i *ngIf="idProgram == undefined || idProgram != 7" class="fas fa-plus"></i><i *ngIf="idProgram == 7" class="fas fa-minus"></i></p>
     </div>
     <div class="col-12" *ngIf="idProgram == 7">
       <ul>
@@ -158,7 +158,7 @@
   </div>
   <div class="row">  
     <div class="col-12">
-      <p class="program-title pink-background" (click)="openProgram(8)">Corte de mantos mediante técnica a tijera </p>
+      <p class="program-title pink-background" (click)="openProgram(8)">Corte de mantos mediante técnica a tijera <i *ngIf="idProgram == undefined || idProgram != 8" class="fas fa-plus"></i><i *ngIf="idProgram == 8" class="fas fa-minus"></i></p>
     </div>
     <div class="col-12" *ngIf="idProgram == 8">
       <ul>
@@ -172,9 +172,9 @@
        </ul>
     </div>
   </div>
-  <div class="row">  
+  <div class="row" style="padding-bottom: 50px;">  
     <div class="col-12">
-      <p class="program-title pink-background" (click)="openProgram(9)">Renovación de mantos mediante técnicas manuales</p>
+      <p class="program-title pink-background" (click)="openProgram(9)">Renovación de mantos mediante técnicas manuales<i *ngIf="idProgram == undefined || idProgram != 9" class="fas fa-plus"></i><i *ngIf="idProgram == 9" class="fas fa-minus"></i></p>
     </div>
     <div class="col-12" *ngIf="idProgram == 9">
       <ul>
@@ -189,7 +189,7 @@
 </div>
 
   <div class="background-img"></div>
-<div class="container-background" style="margin-top: 0px!important;">
+<div class="container-background" style="margin-top: 0px!important;padding-top: 40px;">
 <div class="container"  style="margin-top: 0px!important;">
   <div class="row">
     <div class="col-12">

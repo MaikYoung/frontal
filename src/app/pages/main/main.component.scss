@@ -15,7 +15,8 @@
 }
 
 .comment-main {
-    height: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .sponsors-main {
@@ -108,7 +109,7 @@
 }
 
 .back-academy {
-    background-image: url("/assets/images/cursos-1.jpg");
+    background-image: url("/assets/images/Academia.png");
     background-position: center;
     background-repeat: no-repeat;
     height: 500px;
@@ -119,6 +120,46 @@
     position: relative; 
     top: -20px;
 } 
+
+.back-cursos {
+    background-image: url("/assets/images/Cursos.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: 500px;
+}
+
+.back-cursos:hover{ 
+    position: relative; 
+    top: -20px;
+} 
+
+.back-online {
+    background-image: url("/assets/images/Online.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: 500px;
+}
+
+.back-online:hover{ 
+    position: relative; 
+    top: -20px;
+} 
+
+.back-servicios {
+    background-image: url("/assets/images/Servicios.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: 500px;
+}
+
+.back-servicios:hover{ 
+    position: relative; 
+    top: -20px;
+} 
+
 
 .text {
     position: relative;
