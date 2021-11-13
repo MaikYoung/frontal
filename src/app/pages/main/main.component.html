@@ -1,11 +1,11 @@
 <navbar></navbar>
 
-  <div style="height: 700px;">
-    <img src="/assets/images/carousel-2.jpg" alt="carousel" srcset="" class="carousel-img " *ngIf="imagePath==0" [class.transition]="loadStyle">
+  <div class="img-desktop-carousel">
+    <img src="/assets/images/carousel-2.jpg" alt="carousel" srcset="" class="carousel-img" *ngIf="imagePath==0" [class.transition]="loadStyle">
 
-    <img src="/assets/images/carousel-1.jpg" alt="carousel" srcset="" class="carousel-img " *ngIf="imagePath==1" [class.transition]="loadStyle">
+    <img src="/assets/images/carousel-1.jpg" alt="carousel" srcset="" class="carousel-img" *ngIf="imagePath==1" [class.transition]="loadStyle">
 
-    <img src="/assets/images/carousel-3.jpg" alt="carousel" srcset="" class="carousel-img " *ngIf="imagePath==2" [class.transition]="loadStyle">
+    <img src="/assets/images/carousel-3.jpg" alt="carousel" srcset="" class="carousel-img" *ngIf="imagePath==2" [class.transition]="loadStyle">
   </div>
 
 
@@ -17,7 +17,7 @@
 
   <div class="row margin-bottom">
     <div class="col-12 academy-main">
-      <img src="/assets/images/logo-academy.jpg" alt="LOGO" srcset="" width="500px" height="170px" class="margin-bottom">
+      <img src="/assets/images/logo-academy.jpg" alt="LOGO" srcset="" width="500px" height="170px" class="margin-bottom img-fluid">
     </div>
     <div class="col-12 academy-main">
       <p style="font-size: 22px;">Durante todo el periodo del curso, dejarás de ser un aprendiz de peluquería canina, para convertirte en un profesional del sector y todo lo que esto engloba.
@@ -80,7 +80,7 @@
 
 
     <div class="row motto-section">
-      <div class="col-8 col-xs-12 left">
+      <div class="col-12 col-sm-8 left">
         <p>
           La peluquería canina ha sido mi pasión desde hace más de 30 años, consiguiendo grandes logros a nivel competitivo al igual que juzgando las mejores competiciones del mundo. Gracias a todo este conocimiento y experiencia he conseguido transmitir a más de 12.000 personas durante toda mi carrera el arte del estilismo canino, ayudándoles a conseguir su sueño: 
         </p>
@@ -88,7 +88,7 @@
           Vivir de la peluquería canina.
         </p>
       </div>
-      <div class="col-sm-4 col-xs-12">
+      <div class="col-12 col-sm-4">
         <img class="img-fluid" src="/assets/images/emilia-lado.png" alt="emilia" srcset="">
       </div>
     </div>
@@ -105,7 +105,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row desktop">
         <div class="col-xs-12 col-sm-1" (click)="changeReviewActive('--')">
           <i class="fas fa-chevron-left icon"></i>
         </div>
@@ -122,12 +122,32 @@
         <div class="col-xs-12 col-sm-1"  (click)="changeReviewActive('++')">
           <i class="fas fa-chevron-right icon icon-left"></i>
         </div>
- </div> 
+    </div> 
+
+    <div class="row mobile">
+      <div class="col-12" (click)="changeReviewActive('--')">
+        <i class="fas fa-chevron-up icon-up"></i>
+      </div>
+      
+      <div class="col-12 ">
+        <iframe [class.iframe-active]="reviewActive == 1" class="iframe-reviews space" src="https://www.youtube.com/embed/oBk6LbXmXFE?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="col-12 ">
+        <iframe [class.iframe-active]="reviewActive == 2" class="iframe-reviews space" src="https://www.youtube.com/embed/4EX5OWEMkE0?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="col-12">
+        <iframe [class.iframe-active]="reviewActive == 3" class="iframe-reviews space" src="https://www.youtube.com/embed/wwtFkf4yrLo?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="col-12"  (click)="changeReviewActive('++')">
+        <i class="fas fa-chevron-down icon-down"></i>
+      </div>
+  </div> 
  
   </div>
   <map-contact></map-contact>
 </div>
 <social-network></social-network>
 <footer></footer>
+
 
 

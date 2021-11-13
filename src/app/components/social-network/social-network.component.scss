@@ -7,3 +7,11 @@
     font-size: 40px;
     color: #ff66ff;
 }
+
+@media (max-width: 800px) {
+    .facebook {
+        font-size: 40px;
+        color: #ff66ff;
+        margin-top: 15px;
+    }
+}
